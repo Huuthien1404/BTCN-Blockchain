@@ -97,6 +97,7 @@ const CreateWallet = () => {
                 Your password
               </h1>
               <Input
+              placeholder="Enter password"
                 type="password"
                 value={createWalletForm.password}
                 onChange={(e) => {
