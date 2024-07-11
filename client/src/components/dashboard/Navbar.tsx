@@ -54,7 +54,7 @@ const Navbar = () => {
 
     if (userWallet?.address) {
       const newTransaction: TransactionType = {
-        fromAddress: "MyCoin System",
+        fromAddress: "MyCoin System Blockchain",
         toAddress: userWallet?.address,
         amount: amount,
       };

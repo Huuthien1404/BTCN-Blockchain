@@ -98,7 +98,7 @@ const BlockChainProvider = (props: PropType) => {
         previousHash: "0",
         hash: caculateHash("0", getCurrentTime(), "Genesis block", "0"),
         // nonce: 0,
-        validator: "MyCoin System",
+        validator: "MyCoin System Blockchain",
       };
 
       const genesisTransaction: TransactionType = {

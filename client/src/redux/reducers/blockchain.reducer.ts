@@ -260,7 +260,7 @@ const blockchainReducer = createReducer(initialState, (builder) => {
           timestamp: getCurrentTime(),
           transactions: transaction,
           previousHash: lastestBlock.hash,
-          validator: "MyCoin System",
+          validator: "MyCoin System Blockchain",
         };
 
         block.hash = caculateHash(
