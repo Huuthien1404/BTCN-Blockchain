@@ -138,37 +138,33 @@ const AccessWallet = () => {
         <div className="px-4 py-6">
           <div className="px-4 mb-5 flex flex-wrap gap-3 justify-between">
             <div
-              className="w-[100%] md:w-[30%] p-4 rounded-md flex flex-col gap-5 items-center
+              className="w-[100%] md:w-[30%] p-4 rounded-md flex flex-col gap-5 items-center ring-4 ring-violet
                           hover:scale-110 hover:cursor-pointer hover:bg-violet hover:text-white"
             >
-              <img src="../assets/logo-create.svg" alt="article" />
+              
               <h1 className="text-xl font-bold">Hardware</h1>
               <p className="text-center">
                 Ledger wallet, FINNEY, Trezor, BitBox, Secalot, KeepKey, XWallet
               </p>
             </div>
             <div
-              className="w-[100%] md:w-[30%] p-4 rounded-md flex flex-col gap-5 items-center
+              className="w-[100%] md:w-[30%] p-4 rounded-md flex flex-col gap-5 items-center ring-4 ring-violet
                           hover:scale-110 hover:cursor-pointer hover:bg-violet hover:text-white"
             >
-              <img src="../assets/logo-create.svg" alt="article" />
               <h1 className="text-xl font-bold">MEW CX</h1>
               <p className="text-center">MetaMask, Dappler</p>
             </div>
             <Dialog open={openAccessType} onOpenChange={setOpenAccessType}>
               <DialogTrigger asChild>
                 <div
-                  className="group w-[100%] md:w-[30%] p-4 rounded-md flex flex-col gap-5 items-center
-                          hover:scale-110 hover:cursor-pointer hover:bg-red-700 hover:text-white"
+                  className="group w-[100%] md:w-[30%] p-4 rounded-md flex flex-col gap-5 items-center ring-4 ring-violet
+                          hover:scale-110 hover:cursor-pointer hover:bg-violet hover:text-white"
                 >
-                  <img src="../assets/logo-create.svg" alt="article" />
                   <h1 className="text-xl font-bold">Software</h1>
                   <p className="text-center">
                     Keystore file, Private key, Minemonic phrase
                   </p>
-                  <p className="text-sm text-red-500 font-bold group-hover:text-white">
-                    Not recommended
-                  </p>
+              
                 </div>
               </DialogTrigger>
               <DialogContent>

@@ -96,8 +96,11 @@ const CreateWallet = () => {
               <h1 className="text-3xl text-center my-[30px] font-bold">
                 Your password
               </h1>
+            </div>
+            <div className="flex gap-2 items-center">
               <Input
-              placeholder="Enter password"
+                className="flex-1"
+                placeholder="Enter password"
                 type="password"
                 value={createWalletForm.password}
                 onChange={(e) => {
@@ -107,12 +110,12 @@ const CreateWallet = () => {
                   });
                 }}
               />
+              <button disabled={createWalletForm.password === ""} className="flex items-center justify-around w-[40%] bg-violet text-white font-bold p-2 rounded-md uppercase">
+                <div></div>
+                <p>Next</p>
+                <FaArrowRight />
+              </button>
             </div>
-            <button className="mx-auto flex items-center justify-around w-[60%] bg-violet text-white font-bold p-4 rounded-md">
-              <div></div>
-              <p>Next</p>
-              <FaArrowRight />
-            </button>
             <div className="my-10 flex flex-col items-center">
               <div className="flex flex-wrap justify-center items-center gap-1">
                 <p className="font-bold text-red-700">DO NOT FORGET</p>

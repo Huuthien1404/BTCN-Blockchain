@@ -29,7 +29,7 @@ const Dashboard = () => {
   return (
     <div className="mt-[60px] p-6 flex flex-col gap-10">
       <div className="mb-10 flex flex-wrap gap-5 items-center">
-        <div className="w-[100%] md:w-[400px] h-[150px] bg-[#7995f8] text-white p-6 rounded-md flex gap-5">
+        <div className="w-[100%] md:w-[400px] h-[150px] bg-green-900 text-white p-6 rounded-md flex gap-5">
           <FaUserCircle className="my-auto" size={50} />
           <div className="w-[80%]">
             <h1 className="text-2xl font-bold">Address</h1>
@@ -65,7 +65,7 @@ const Dashboard = () => {
             </Dialog>
           </div>
         </div>
-        <div className="w-[100%] md:w-[400px] h-[150px] bg-[#f4812e] text-white p-6 rounded-md flex gap-5">
+        <div className="w-[100%] md:w-[400px] h-[150px] bg-red-900 text-white p-6 rounded-md flex gap-5">
           <GiWallet className="my-auto" size={50} />
           <div className="w-[80%]">
             <h1 className="text-2xl font-bold">Balance</h1>
@@ -74,7 +74,7 @@ const Dashboard = () => {
             </p>
           </div>
         </div>
-        <div className="w-[100%] md:w-[400px] h-[150px] bg-[#2ebfea] text-white p-6 rounded-md flex gap-5">
+        <div className="w-[100%] md:w-[400px] h-[150px] bg-blue-900 text-white p-6 rounded-md flex gap-5">
           <FaEthereum className="my-auto" size={50} />
           <div className="w-[80%] flex gap-5">
             <div>

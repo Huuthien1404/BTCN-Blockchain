@@ -8,9 +8,6 @@ import {
 import { MdDashboard } from "react-icons/md";
 import { RiCoinsLine } from "react-icons/ri";
 import { FaHistory } from "react-icons/fa";
-import { GrAppsRounded } from "react-icons/gr";
-import { FaShuffle } from "react-icons/fa6";
-import { TiMessages } from "react-icons/ti";
 
 const contents = [
   {
@@ -30,25 +27,7 @@ const contents = [
     name: "History",
     url: "/dashboard/history",
     icon: <FaHistory size={25} />,
-  },
-  {
-    id: 4,
-    name: "DApps",
-    url: "/dashboard/dapps",
-    icon: <GrAppsRounded size={25} />,
-  },
-  {
-    id: 5,
-    name: "Contract",
-    url: "/dashboard/contract",
-    icon: <FaShuffle size={25} />,
-  },
-  {
-    id: 6,
-    name: "Message",
-    url: "/dashboard/message",
-    icon: <TiMessages size={25} />,
-  },
+  }
 ];
 
 const Slidebar = () => {
@@ -63,8 +42,8 @@ const Slidebar = () => {
               <TooltipTrigger asChild>
                 <Link to={content?.url}>
                   <div
-                    className={`flex items-center justify-center md:justify-start p-4 rounded-md hover:bg-primary-green hover:text-white ${
-                      pathName === content?.url && "bg-primary-green text-white"
+                    className={`flex items-center justify-center md:justify-start p-4 rounded-md hover:bg-violet hover:text-white ${
+                      pathName === content?.url && "bg-violet text-white"
                     }`}
                   >
                     {content?.icon}
